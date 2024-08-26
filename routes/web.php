@@ -6,4 +6,6 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('/contact', [ContactController::class, 'store']);
+Route::get('/contact', [ContactController::class, 'store']);
+Route::POST('/contact', [ContactController::class, 'store']);
+
